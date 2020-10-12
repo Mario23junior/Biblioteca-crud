@@ -25,7 +25,7 @@ public class UsuarioController {
 	 
 	 @PostMapping
 	 @ResponseStatus(HttpStatus.CREATED)
-	 public void salvar(@RequestBody Usuario usuario) {
-		 repository.save(usuario);
+	 public Usuario salvar(@RequestBody Usuario usuario) {
+		 return repository.save(usuario);
 	 }
 } 
