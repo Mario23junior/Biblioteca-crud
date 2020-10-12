@@ -61,7 +61,6 @@ public class BibliotecaController {
 					Biblioteca updated = repository.save(update);
 					return ResponseEntity.ok().body(updated);	
 				}).orElse(ResponseEntity.notFound().build());
-	}
-	        
-	
+	  }
+	       
  }
