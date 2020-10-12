@@ -13,6 +13,9 @@ import com.crudBiblioteca.Repository.RepositoryUsuario;
 @RestController
 @RequestMapping("/salvar/user")
 public class UsuarioController {
+	
+	 public UsuarioController() {
+ 	}
    
 	 private RepositoryUsuario repository;
 	
